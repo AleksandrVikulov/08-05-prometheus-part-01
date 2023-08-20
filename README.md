@@ -4,17 +4,53 @@
 
 Процесс выполнения
 
-1.
+1. Создадим файл с правилом в папке `/etc/prometheus`
 
-2.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task01-img01.png">
+</kbd>
+<p></p>
 
-3.
+2. Пропишем правило в созданном файле
 
-4.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task01-img02.png">
+</kbd>
+<p></p>
 
-5.
+3. Добавим правило в конфигурационный файл `prometheus.yml`
 
-6.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task01-img03.png">
+</kbd>
+<p></p>
+
+4. Перезапустим Prometheus и проверим, что всё работает.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task01-img04.png">
+</kbd>
+<p></p>
+
+5. Видим, что правило добавилось в Prometheus
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task01-img05.png">
+</kbd>
+<p></p>
+
+6. Выключим Node Exporter и увидим, что оповещение перешло в статус `PENDING`
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task01-img06.png">
+</kbd>
+<p></p>
 
 7.
 
