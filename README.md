@@ -258,22 +258,10 @@
 
 ### Задание 4*
 
-1.
+1. Cоздадим дашборд и добавим две метрики: одну для Docker'а, другую для ноды
 
-2.
-
-3.
-
-4.
-
-5.
-
-6.
-
-7.
-
-8.
-
-9.
-
-10.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task04-img01.png">
+</kbd>
+<p></p>
