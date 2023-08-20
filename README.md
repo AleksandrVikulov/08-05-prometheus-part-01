@@ -186,25 +186,69 @@
 
 Процесс выполнения
 
-1.
+1. Пропустим этап с установкой Docker, он был установлен в модуле "Виртуализация". Чтобы убедится в рабоспособность Docker запустим котейнер `Hello World`
 
-2.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task03-img01.png">
+</kbd>
+<p></p>
 
-3.
+2. Запустим Docker и проверим его статус.
 
-4.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task03-img02.png">
+</kbd>
+<p></p>
 
-5.
+3. Для подклбчения Docker к Prometheus создадим файл `/etc/docker/daemon.json`.
 
-6.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task03-img03.png">
+</kbd>
+<p></p>
 
-7.
+4. Пропишем в этом файле конфигурацию для подключения с любого хоста.
 
-8.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task03-img04.png">
+</kbd>
+<p></p>
 
-9.
+5. Перезапустим Docker и убедимся, что всё работает
 
-10.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task03-img05.png">
+</kbd>
+<p></p>
+
+6. Теперь млжем подключится на порт 9323 и посмотреть метрики, которые отдает Docker
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task03-img06.png">
+</kbd>
+<p></p>
+
+7. Далее добавим это в виде нового таргета в Prometheus. Для этого отредактируем конфигурационный файл.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task03-img07.png">
+</kbd>
+<p></p>
+
+8. После перезапуска Prometheus увидим, что добавился новый таргет.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task03-img08.png">
+</kbd>
+<p></p>
 
 ---
 
