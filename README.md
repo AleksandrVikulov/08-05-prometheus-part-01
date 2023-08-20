@@ -52,14 +52,6 @@
 </kbd>
 <p></p>
 
-7.
-
-8.
-
-9.
-
-10.
-
 ---
 
 ### Задание 2
@@ -148,7 +140,45 @@
 </kbd>
 <p></p>
 
-10.
+10. Изменим настройки конфигурационного файла для работы с оповещениями
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task02-img10.png">
+</kbd>
+<p></p>
+
+11. Перезапустим Prometheus и убедимся, что всё работает
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task02-img11.png">
+</kbd>
+<p></p>
+
+12. Отключим Node Exporter и убедимся, что он отключился
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task02-img12.png">
+</kbd>
+<p></p>
+
+13. Подождем минуту и увидим, что оповещение в Prometheus перешло в статус `Firing`
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task02-img13.png">
+</kbd>
+<p></p>
+
+14. Перейдем в Alertmanager и увидим оповещение об отключении хоста
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-05-prometheus-part-02/blob/master/img/task02-img14.png">
+</kbd>
+<p></p>
 
 ---
 
